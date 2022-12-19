@@ -168,6 +168,7 @@ export function SidebarNavigation() {
                 : "/icons/logo-large.svg"
             }
             alt="logo"
+            style={{ width: isSidebarCollapsed ? "1.4375rem" : "7.375rem" }}
           />
           <MenuButton onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
             <MenuIcon
