@@ -21,7 +21,6 @@ const statuses = {
   [ProjectStatus.info]: "stable",
   [ProjectStatus.warning]: "warning",
   [ProjectStatus.error]: "critical",
-  //
   [ProjectStatus.critical]: "critical",
 };
 
