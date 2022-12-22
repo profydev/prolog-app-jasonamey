@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
-import { SidebarNavigation } from "@features/ui";
+import { SidebarNavigation, Footer } from "@features/ui";
 import { color, displayFont, textFont, space, breakpoint } from "@styles/theme";
 
 type PageContainerProps = {
@@ -71,6 +71,7 @@ export function PageContainer({ children, title, info }: PageContainerProps) {
           <Info>{info}</Info>
           {children}
         </ContentContainer>
+        <Footer />
       </Main>
     </Container>
   );
