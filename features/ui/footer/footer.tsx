@@ -10,7 +10,6 @@ const footerItems = [
 ];
 
 const Container = styled.footer`
-  width: calc(100% - 2 * ${space(8)});
   height: 10rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,7 @@ const Container = styled.footer`
   @media (min-width: ${breakpoint("desktop")}) {
     flex-direction: row;
     justify-content: space-between;
-    width: calc(100vw - 21.5rem);
+    left: 17.5rem;
     height: 3.75rem;
   }
 `;

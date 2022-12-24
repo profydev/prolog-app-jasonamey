@@ -27,10 +27,11 @@ describe("Project List", () => {
         [ProjectStatus.info]: "stable",
         [ProjectStatus.warning]: "warning",
         [ProjectStatus.error]: "critical",
+        [ProjectStatus.critical]: "critical",
       };
 
       // get all project cards
-      cy.get("main")
+      cy.get("main > div")
         .find("li")
         .each(($el, index) => {
           const renderedStatus =
@@ -40,7 +41,6 @@ describe("Project List", () => {
           cy.wrap($el).contains(languageNames[index]);
           cy.wrap($el).contains(mockProjects[index].numIssues);
           cy.wrap($el).contains(mockProjects[index].numEvents24h);
-          // cy.wrap($el).contains(capitalize(mockProjects[index].status));
           cy.wrap($el).contains(capitalize(renderedStatus));
           cy.wrap($el)
             .find("a")
