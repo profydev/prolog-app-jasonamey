@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { breakpoint, space } from "@styles/theme";
 import { ProjectCard } from "../project-card";
+import { Spinner } from "@features/ui";
 import { useProjects } from "../../api/use-projects";
 
 const List = styled.ul`
@@ -22,7 +23,7 @@ export function ProjectList() {
   const { data, isLoading, isError, error } = useProjects();
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <Spinner />;
   }
 
   if (isError) {
