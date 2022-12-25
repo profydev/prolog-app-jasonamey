@@ -65,7 +65,6 @@ export function Footer() {
         <List>
           {footerItems.map((item) => (
             <ListItem key={item.text}>
-              {" "}
               <Anchor href={item.href} passHref>
                 {item.text}
               </Anchor>
