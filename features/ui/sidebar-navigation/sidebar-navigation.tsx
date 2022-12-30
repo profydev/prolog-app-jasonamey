@@ -5,7 +5,7 @@ import { Routes } from "@config/routes";
 import { NavigationContext } from "./navigation-context";
 import { MenuItemButton } from "./menu-item-button";
 import { MenuItemLink } from "./menu-item-link";
-import { Button } from "@features/ui";
+import { Button } from "./button";
 import { breakpoint, color, space, zIndex } from "@styles/theme";
 
 const menuItems = [
@@ -70,7 +70,6 @@ const Header = styled.header`
 
 const Logo = styled.img`
   width: 7.375rem;
-
   @media (min-width: ${breakpoint("desktop")}) {
     margin: ${space(0, 4)};
   }

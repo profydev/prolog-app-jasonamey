@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "@features/ui";
 import { ListItem, Anchor, Icon } from "./menu-item-link";
+import { Button } from "./button";
 
 type MenuItemProps = {
   className?: string;
