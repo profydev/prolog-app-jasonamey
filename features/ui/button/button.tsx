@@ -25,7 +25,6 @@ export enum IconPosition {
   none = "none",
 }
 
-// export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   color: ButtonColor;
   size: ButtonSize;
@@ -213,7 +212,6 @@ export function Button(props: ButtonProps) {
       )}
       {position === IconPosition.only && (
         <>
-          {" "}
           <Icon src={iconSrc} position={position} size={size} />{" "}
         </>
       )}
