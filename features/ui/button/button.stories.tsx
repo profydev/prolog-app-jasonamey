@@ -18,11 +18,11 @@ export default meta;
 const Template: Story<ButtonProps> = ({
   size = ButtonSize.small,
   color = ButtonColor.primary,
-  position = IconPosition.only,
+  position = IconPosition.none,
   children,
   ...buttonProps
 }: ButtonProps) => (
-  <Button size={size} color={color} position={position} {...buttonProps}>
+  <Button {...buttonProps} size={size} color={color} position={position}>
     {children}
   </Button>
 );
@@ -32,4 +32,5 @@ export const Default = Template.bind({});
 Default.args = {
   children: "Button CTA",
   disabled: false,
+  position: IconPosition.none,
 };
